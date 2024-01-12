@@ -1,0 +1,17 @@
+py_test(
+    name = "test1",
+    srcs = ["test1.py"],
+    main = "test1.py",
+    deps = [
+        "//library:pythonlibrary"
+    ]
+)
+
+py_test(
+    name = "test2",
+    srcs = ["test2.py"],
+    main = "test2.py",
+    deps = [
+        "//library:pythonlibrary"
+    ]
+)
